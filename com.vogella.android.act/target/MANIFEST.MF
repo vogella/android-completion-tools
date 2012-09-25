@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.ui.editors,org.eclipse.jdt,org.eclipse.jdt
+ .ui
+Bundle-Vendor: vogella GmbH
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201209251450
+Bundle-Name: Act
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.vogella.android.act;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
