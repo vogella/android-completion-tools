@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.android.act.feature"
+      id="com.vogella.android.act.feature"
       label="Feature"
       version="1.0.0.qualifier"
       provider-name="ANDROID">

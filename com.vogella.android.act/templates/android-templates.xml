@@ -72,6 +72,11 @@
 	${viewtype:link(EditText, ImageView, Button)} ${myvar:newName(view)} = (${viewtype:link(EditText, ImageView, Button)}) findViewById(R.id.${cursor});
 </template>
 
+<template name="findViewById - TextView" description="findView by ID for TextView" id="org.eclipse.jdt.ui.templates.android.findviewbyidtextview" context="java-statements" enabled="true" autoinsert="false">
+ 	${type:newType(android.view.TextView)} ${myvar:newName(textView)} = (TextView) findViewById(R.id.${cursor});
+ 	${myvar:newName(textView)}.setText();
+</template>
+
 <template name="toast" description="Creates a toast" id="org.eclipse.jdt.ui.templates.android.toast" context="java-statements" enabled="true" autoinsert="false">
 	Toast.makeText(this, "${cursor}", Toast.LENGTH_SHORT).show();
 </template>

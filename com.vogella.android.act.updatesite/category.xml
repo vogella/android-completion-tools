@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.vogella.android.act.feature_1.0.0.qualifier.jar" id="com.vogella.android.act.feature" version="1.0.0.qualifier">
+      <category name="com.vogella.act"/>
+   </feature>
+   <category-def name="com.vogella.act" label="Android Completion Tools"/>
+</site>
