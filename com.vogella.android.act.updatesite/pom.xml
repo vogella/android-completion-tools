@@ -13,9 +13,30 @@
 	<packaging>eclipse-repository</packaging>
 
 	<name>vogella Android Completion Tools - Upatesite</name>
-	
+
 	<build>
-	<extensions>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<extensions>
 			<!-- Enabling the use of FTP -->
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
@@ -24,7 +45,7 @@
 			</extension>
 		</extensions>
 	</build>
-	
+
 	<profiles>
 		<!-- This profile is used to upload the repo -->
 		<profile>
